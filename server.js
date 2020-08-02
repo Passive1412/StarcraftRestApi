@@ -5,12 +5,12 @@ const path = require('express');
 const app = express();
 
 // Serve only the static files from the dist directory
-app.use(express.static('./dist/starcraft-rest-api'));
+app.use(express.static('./dist/StarcraftRestApi'));
 //app.use(express.static(__dirname + 'dist/frontend'));
 
 app.get('/*', function(req,res) {
 
-res.sendFile('index.html', {root: 'dist/starcraft-rest-api/'});
+res.sendFile('index.html', {root: 'dist/StarcraftRestApi/'});
 //res.sendFile(path.join(__dirname+'/dist/frontend/index.html'));
 });
 
